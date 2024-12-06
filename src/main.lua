@@ -5,7 +5,7 @@ private_oui_packer.main = function()
         return
     end
     if first_arg == "--folder_mode" then
-        private_darwin.folder_execution()
+        private_oui_packer.folder_execution()
         return
     end
 

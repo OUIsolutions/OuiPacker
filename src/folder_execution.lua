@@ -10,13 +10,14 @@ private_oui_packer.folder_execution = function()
         private_oui_packer.print_red(folder .. "its not a folder\n")
         return
     end
-    local all_itens = {}
     local all_paths = dtw.list_files_recursively(folder, true)
     for i = 1, #all_paths do
-        local current_content = dtw.load_file(all_paths[i])
-        all_itens[#all_itens + 1] = current_content
+        dofile(all_paths[i])
     end
-    all_itens[#all_itens + 1] = "main()"
-    content = table.concat(all_itens, "\n")
-    dostring(content)
+
+    if not main then
+        private_oui_packer.print_red("main function not provided\n")
+        return
+    end
+    main()
 end
