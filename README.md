@@ -24,6 +24,6 @@ OUI Packer Have The Follow libs native
 
 |  Object Name  | Lib Name |
 |--------------|---------|
-|camalgamator | [LuaCAmalgamator](https://github.com/OUIsolutions/LuaCAmalgamator]) |
+|camalgamator | [LuaCAmalgamator](https://github.com/OUIsolutions/LuaCAmalgamator) |
 |dtw| [LuaDoTheWorld](https://github.com/OUIsolutions/LuaDoTheWorld)|
-|candango|[candangoEngine](https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine]) |
+|candango|[candangoEngine](https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine) |
