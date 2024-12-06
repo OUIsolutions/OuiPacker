@@ -14,3 +14,16 @@ a error
 ```shell
 ./OuiPacker.o --folder_mode  src
 ``
+## Type Anotations
+you can generate a type anotation file by typing
+```shell
+./OuiPacker.o --drop_types types.lua
+```
+## Building libs
+OUI Packer Have The Follow libs native
+
+|  Object Name  | Lib Name |
+|--------------|---------|
+|camalgamator | [https://github.com/OUIsolutions/LuaCAmalgamator](LuaCAmalgamator) |
+|dtw| [https://github.com/OUIsolutions/LuaDoTheWorld](LuaDoTheWorld)|
+|candango|[https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine](candangoEngine) |

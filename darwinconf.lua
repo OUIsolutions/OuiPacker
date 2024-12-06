@@ -27,7 +27,6 @@ darwin.add_c_file("candangoEngine/src/main.c", true, function(import, path)
     return true
 end)
 
-darwin.add_c_file("CTextEngine.h")
 
 --darwin.add_c_code("\n#undef printf\n")
 
