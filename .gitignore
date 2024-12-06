@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
-
+LuaDoTheWorld
+candangoEngine
+Darwin
 # Object files
 *.o
 *.ko
