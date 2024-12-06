@@ -1,7 +1,7 @@
 -- eliminantes unwanted prints
 --darwin.add_c_code("\n#undef printf\n")
 --darwin.add_c_code("#define printf(...) \n")
-darwin.c_include("lua_c_amalgamator_darwin_import.c")
+darwin.add_c_file("lua_c_amalgamator_darwin_import.c")
 darwin.load_lualib_from_c(
     "luaopen_lua_c_amalgamator",
     "camalgamator"

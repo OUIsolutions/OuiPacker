@@ -1,7 +1,6 @@
 rm -rf LuaDoTheWorld
 rm -rf candangoEngine
-rm -rf types
-mkdir types
+
 git clone -b v0.71 https://github.com/OUIsolutions/LuaDoTheWorld.git
 git clone -b V0.003 https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine.git
 
