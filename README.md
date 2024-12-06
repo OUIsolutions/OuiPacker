@@ -19,12 +19,13 @@ NOTE THAT YOUR CODE MUST HAVE A **main** function, otherwise will raise
 a error
 ```shell
 ./OuiPacker.o --folder_mode  src
-``
+```
 ## Type Anotations
 you can generate a type anotation file by typing
 ```shell
 ./OuiPacker.o --drop_types types.lua
 ```
+
 ## Building libs
 OUI Packer Have The Follow libs native
 
