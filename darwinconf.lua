@@ -1,12 +1,21 @@
 -- eliminantes unwanted prints
 --darwin.add_c_code("\n#undef printf\n")
 --darwin.add_c_code("#define printf(...) \n")
+darwin.c_include("lua_c_amalgamator_darwin_import.c")
+darwin.load_lualib_from_c(
+    "luaopen_lua_c_amalgamator",
+    "camalgamator"
+)
 
 darwin.add_c_file("LuaDoTheWorld/src/one.c", true, function(import, path)
     -- to make the luacembe not be imported twice
     if import == "../dependencies/dependency.LuaCEmbed.h" then
         return false
     end
+    if import == "../dependencies/dependency.doTheWorld.h" then
+        return false
+    end
+
     return true
 end)
 
@@ -17,6 +26,8 @@ darwin.add_c_file("candangoEngine/src/main.c", true, function(import, path)
     end
     return true
 end)
+
+darwin.add_c_file("CTextEngine.h")
 
 --darwin.add_c_code("\n#undef printf\n")
 
@@ -29,6 +40,7 @@ end
 darwin.embed_global("PRIVATE_DARWIN_TYPES", types)
 
 
+darwin.load_lualib_from_c("luaopen_lua_c_amalgamator", "camalgamator")
 darwin.load_lualib_from_c("load_luaDoTheWorld", "dtw")
 darwin.load_lualib_from_c("candango_engine_start_point", "candango")
 darwin.add_lua_code("private_oui_packer = {}")

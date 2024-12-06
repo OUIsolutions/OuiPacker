@@ -1,7 +1,12 @@
 # Prerequisites
 *.d
+darwin.c
+lua_c_amalgamator_darwin_import.c
+doTheWorld.h
 LuaDoTheWorld
+CTextEngine.h
 candangoEngine
+lua_c_amalgamator_dependencie_not_included.c
 Darwin
 teste.lua
 debug.lua
