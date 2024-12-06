@@ -3,6 +3,7 @@
 LuaDoTheWorld
 candangoEngine
 Darwin
+ darwin.c
 # Object files
 *.o
 *.ko
