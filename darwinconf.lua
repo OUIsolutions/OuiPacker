@@ -42,8 +42,8 @@ for i = 1, #types_files do
 end
 darwin.embed_global("PRIVATE_DARWIN_TYPES", types)
 darwin.load_lualib_from_c("load_luaDoTheWorld", "dtw")
-darwin.load_lualib_from_c("candango_engine_start_point", "private_darwin_candango")
-darwin.add_lua_code("private_oui_packer = {actions={}}")
+darwin.load_lualib_from_c("candango_engine_start_point", "candango")
+darwin.add_lua_code("private_oui_packer = {}")
 
 local src_files = dtw.list_files_recursively("src", true)
 for i = 1, #src_files do

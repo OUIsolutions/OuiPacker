@@ -3,6 +3,9 @@
 LuaDoTheWorld
 candangoEngine
 Darwin
+teste.lua
+debug.lua
+OuiPacker.c
  darwin.c
 # Object files
 *.o

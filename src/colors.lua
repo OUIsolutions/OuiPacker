@@ -3,12 +3,12 @@ private_oui_packer.print_color = function(color, text)
     io.write(color .. text .. RESSET)
 end
 private_oui_packer.print_green = function(text)
-    private_darwin.print_color("\x1b[32m", text)
+    private_oui_packer.print_color("\x1b[32m", text)
 end
 
 private_oui_packer.print_blue = function(text)
-    private_darwin.print_color("\x1b[34m", text)
+    private_oui_packer.print_color("\x1b[34m", text)
 end
 private_oui_packer.print_red = function(text)
-    private_darwin.print_color("\x1b[31m", text)
+    private_oui_packer.print_color("\x1b[31m", text)
 end
