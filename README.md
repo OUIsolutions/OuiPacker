@@ -1,6 +1,12 @@
 # OuiPacker
 a Lua Runtime with all dependencies required to build OUI products
 
+## Build
+for building the project you can just call
+```shell
+curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.001/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
+```
+
 ## Runing a input.lua file
 for runing a input.lua file you can just type
 ```shell
