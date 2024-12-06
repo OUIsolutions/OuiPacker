@@ -21,26 +21,14 @@ end)
 --darwin.add_c_code("\n#undef printf\n")
 
 
----@type Asset[]
-local types = {}
-
-local types_files = dtw.list_files_recursively("types", false)
-for i = 1, #types_files do
-    local current_item = types_files[i]
-    local path = "assets/" .. current_item
-    types[#types + 1] = {
-        path = current_item,
-        content = dtw.load_file(path)
-    }
-end
-darwin.embed_global("PRIVATE_OUI_PACKER_TYPES", types)
-
 local types = ""
 local types_files = dtw.list_files_recursively("types", true)
 for i = 1, #types_files do
     types = types .. "\n" .. dtw.load_file(types_files[i])
 end
 darwin.embed_global("PRIVATE_DARWIN_TYPES", types)
+
+
 darwin.load_lualib_from_c("load_luaDoTheWorld", "dtw")
 darwin.load_lualib_from_c("candango_engine_start_point", "candango")
 darwin.add_lua_code("private_oui_packer = {}")
