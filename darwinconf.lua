@@ -67,6 +67,6 @@ for i = 1, #src_files do
 end
 darwin.add_lua_code("private_oui_packer.main()")
 darwin.generate_lua_output({ output_name = "debug.lua" })
-darwin.generate_c_executable_output({ output_name = "OuiPacker.c" })
-os.execute("gcc OuiPacker.c -o  OuiPacker.o")
+darwin.generate_c_executable_output({ output_name = "release/OuiPacker.c" })
+os.execute("gcc release/OuiPacker.c --static -o  release/OuiPacker.o")
 --os.execute("i686-w64-mingw32-gcc OuiPacker.c -o  OuiPacker.exe")
