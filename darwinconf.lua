@@ -1,13 +1,13 @@
 -- eliminantes unwanted prints
 --darwin.add_c_code("\n#undef printf\n")
 --darwin.add_c_code("#define printf(...) \n")
-darwin.add_c_file("lua_c_amalgamator_darwin_import.c")
+darwin.add_c_file("dependencies/lua_c_amalgamator_darwin_import.c")
 darwin.load_lualib_from_c(
     "luaopen_lua_c_amalgamator",
     "camalgamator"
 )
 
-darwin.add_c_file("LuaDoTheWorld/src/one.c", true, function(import, path)
+darwin.add_c_file("dependencies/LuaDoTheWorld/src/one.c", true, function(import, path)
     -- to make the luacembe not be imported twice
     if import == "../dependencies/dependency.LuaCEmbed.h" then
         return false
@@ -19,7 +19,7 @@ darwin.add_c_file("LuaDoTheWorld/src/one.c", true, function(import, path)
     return true
 end)
 
-darwin.add_c_file("candangoEngine/src/main.c", true, function(import, path)
+darwin.add_c_file("dependencies/candangoEngine/src/main.c", true, function(import, path)
     -- to make the luacembe not be imported twice
     if import == "../dependencies/depB.LuaCEmbed.h" then
         return false
