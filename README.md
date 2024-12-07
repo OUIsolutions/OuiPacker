@@ -6,6 +6,14 @@ for building the project you can just call
 ```shell
 curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
 ```
+## Building From Scratch
+for building from scratch you must have gcc installed on your machine
+then clone the repo and type
+```
+sh install_dependencies.sh && ./darwin.o build
+```
+## Building from docker
+
 
 ## Runing a input.lua file
 for runing a input.lua file you can just type

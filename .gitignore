@@ -3,7 +3,7 @@
 dependencies
 teste.lua
 debug.lua
-OuiPacker.c
+OuiPacker*
  darwin.c
 # Object files
 *.o
