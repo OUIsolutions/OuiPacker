@@ -13,7 +13,15 @@ then clone the repo and type
 sh install_dependencies.sh && ./darwin.o build
 ```
 ## Building from docker
-
+for building from docker, you must have docker installed in your machine
+then  just type 
+```
+docker build -t darwin .
+```
+than you can run the image
+```shell
+docker run -it --rm dar
+```
 
 ## Runing a input.lua file
 for runing a input.lua file you can just type
