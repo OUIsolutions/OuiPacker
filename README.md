@@ -1,5 +1,11 @@
 # OuiPacker
 a Lua Runtime with all dependencies required to build OUI products
+## Pre Compiled binary
+if you want , you can use our pre compiled binarie, dowload by typing:
+```shell
+curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPacker.o -o OuiPacker.o 
+```
+
 
 ## Build
 for building the project you can just call
