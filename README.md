@@ -20,7 +20,7 @@ docker build -t darwin .
 ```
 than you can run the image
 ```shell
-docker run  --volume $(pwd)/src:/src/:z  --it --rm darwin
+docker run  --volume $(pwd)/:/OuiPacker/:z  -it  darwin
 ```
 
 ## Runing a input.lua file
