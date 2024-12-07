@@ -20,7 +20,12 @@ docker build -t darwin .
 ```
 than you can run the image
 ```shell
-docker run  --volume $(pwd)/src/:/src/:z  -it  darwin
+ docker run  --volume $(pwd)/src:/src/:z --volume $(pwd)/release:/release/:z   -it  darwin
+ 
+ ```
+and inside the machine , you can run 
+```shell
+ darwin build 
 ```
 
 ## Runing a input.lua file
