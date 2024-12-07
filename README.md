@@ -4,7 +4,7 @@ a Lua Runtime with all dependencies required to build OUI products
 ## Build
 for building the project you can just call
 ```shell
-curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.001/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
+curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
 ```
 
 ## Runing a input.lua file
@@ -34,3 +34,4 @@ OUI Packer Have The Follow libs native
 |camalgamator | [LuaCAmalgamator](https://github.com/OUIsolutions/LuaCAmalgamator) |
 |dtw| [LuaDoTheWorld](https://github.com/OUIsolutions/LuaDoTheWorld)|
 |candango|[candangoEngine](https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine) |
+|json|[LuaFluidJson](https://github.com/OUIsolutions/LuaFluidJson) |
