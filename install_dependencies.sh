@@ -4,7 +4,7 @@ mkdir dependencies
 cd dependencies
 rm -rf LuaDoTheWorld
 rm -rf candangoEngine
-
+git clone -b v0.52 https://github.com/OUIsolutions/LuaFluidJson.git
 git clone -b v0.71 https://github.com/OUIsolutions/LuaDoTheWorld.git
 git clone -b V0.003 https://github.com/SamuelHenriqueDeMoraisVitrio/candangoEngine.git
 

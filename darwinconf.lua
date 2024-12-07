@@ -26,6 +26,19 @@ darwin.add_c_file("dependencies/candangoEngine/src/main.c", true, function(impor
     end
     return true
 end)
+darwin.add_c_file("dependencies/LuaFluidJson/src/main.c", true, function(import, path)
+    -- to make the luacembe not be imported twice
+    if import == "dependencies/LuaCEmbed.h" then
+        return false
+    end
+    if import == "dependencies/cJSON/cJSON.h" then
+        return false
+    end
+    if import == "dependencies/cJSON/cJSON.c" then
+        return false
+    end
+    return true
+end)
 
 
 --darwin.add_c_code("\n#undef printf\n")
@@ -41,6 +54,8 @@ darwin.embed_global("PRIVATE_DARWIN_TYPES", types)
 
 darwin.load_lualib_from_c("luaopen_lua_c_amalgamator", "camalgamator")
 darwin.load_lualib_from_c("load_luaDoTheWorld", "dtw")
+darwin.load_lualib_from_c("load_lua", "json")
+
 darwin.load_lualib_from_c("candango_engine_start_point", "candango")
 darwin.add_lua_code("private_oui_packer = {}")
 
