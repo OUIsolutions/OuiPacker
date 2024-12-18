@@ -81,7 +81,7 @@ darwin.add_lua_code("private_oui_packer.main()")
 darwin.generate_lua_output({ output_name = "debug.lua" })
 darwin.generate_c_executable_output({ output_name = "release/OuiPacker.c" })
 
-f is_arg_present("build_windows") then 
+if is_arg_present("build_windows") then 
     os.execute("i686-w64-mingw32-gcc release/OuiPacker.c --static -o  release/OuiPacker.exe")
 end 
 
