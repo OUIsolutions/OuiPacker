@@ -86,7 +86,7 @@ if is_arg_present("build_windows") then
 end 
 
 if is_arg_present("build_linux") then 
-    os.execute("gcc release/OuiPacker.c --static -o  release/OuiPacker.o")
+    os.execute("gcc release/OuiPacker.c --static -o  release/OuiPacker.out")
 
 end 
 

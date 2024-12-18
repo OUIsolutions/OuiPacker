@@ -1,16 +1,19 @@
 # OuiPacker
 a Lua Runtime with all dependencies required to build OUI products
-## Pre Compiled binary
-if you want , you can use our pre compiled binarie, dowload by typing:
-```shell
-curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPacker.o -o OuiPacker.o 
-```
+
+## Releases 
+| item          | plataform |  
+|-------        |-----------|
+| [Amalgamation](https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.c)| Source  |
+| [OuiPacker.out](https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.out)|Linux binary|
+| [OuiPacker.exe](hhttps://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.exe)|Windows binary | 
 
 
-## Build
-for building the project you can just call
+
+## Compile
+for compile the project you can just call
 ```shell
-curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
+curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.c -o OuiPacker.c && gcc  OuiPacker.c -o  OuiPacker.o
 ```
 ## Building From Scratch
 for building from scratch you must have gcc installed on your machine
