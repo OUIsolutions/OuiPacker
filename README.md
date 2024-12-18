@@ -22,7 +22,9 @@ sh install_dependencies.sh && ./darwin.o build
 for building from docker, you must have docker installed in your machine
 then  just type 
 ```
-docker build -t darwin .
+sh install_dependencies.sh
+ sh create_all_docker_images.sh 
+ sh build_all_from_docker.sh
 ```
 than you can run the image
 ```shell
