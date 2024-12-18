@@ -16,7 +16,7 @@ curl -L https://github.com/OUIsolutions/OuiPacker/releases/download/0.002/OuiPac
 for building from scratch you must have gcc installed on your machine
 then clone the repo and type
 ```
-sh install_dependencies.sh && ./darwin.o build
+sh install_dependencies.sh && ./darwin.o build build_linux  build_windows
 ```
 ## Building from docker
 for building from docker, you must have docker installed in your machine
