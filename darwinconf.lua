@@ -1,13 +1,12 @@
-
-
 function is_arg_present(arg_name)
-    for i=1, #arg do
+    for i = 1, #arg do
         if arg[i] == arg_name then
             return true
         end
     end
     return false
 end
+
 darwin.add_c_file("dependencies/CTextEngine.h")
 darwin.add_c_file("dependencies/LuaCEmbed.h")
 darwin.add_c_file("dependencies/doTheWorld.h")
@@ -81,7 +80,7 @@ for i = 1, #src_files do
 end
 darwin.add_lua_code("private_oui_packer.main()")
 darwin.generate_lua_output({ output_name = "debug.lua" })
-darwin.generate_c_executable_output({ output_name = "release/OuiPacker.c", include_lua_cembed=false})
+darwin.generate_c_executable_output({ output_name = "release/OuiPacker.c", include_lua_cembed = false })
 
 if is_arg_present("build_windows") then
     os.execute("i686-w64-mingw32-gcc release/OuiPacker.c --static -o  release/OuiPacker.exe")
@@ -89,5 +88,4 @@ end
 
 if is_arg_present("build_linux") then
     os.execute("gcc release/OuiPacker.c --static -o  release/OuiPacker.out")
-
 end
