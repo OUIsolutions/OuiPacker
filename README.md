@@ -4,9 +4,9 @@ a Lua Runtime with all dependencies required to build OUI products
 ## Releases
 | item          | plataform |
 |-------        |-----------|
-| [Amalgamation](https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.c)| Source  |
-| [OuiPacker.out](https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.out)|Linux binary|
-| [OuiPacker.exe](https://github.com/OUIsolutions/OuiPacker/releases/download/0.003/OuiPacker.exe)|Windows binary |
+| [Amalgamation](https://github.com/OUIsolutions/OuiPacker/releases/download/0.004/OuiPacker.c)| Source  |
+| [OuiPacker.out](https://github.com/OUIsolutions/OuiPacker/releases/download/0.004/OuiPacker.out)|Linux binary|
+| [OuiPacker.exe](https://github.com/OUIsolutions/OuiPacker/releases/download/0.004/OuiPacker.exe)|Windows binary |
 
 
 
